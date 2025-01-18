@@ -1,0 +1,10 @@
+<div class="brd"><sup>13:09  09.05.24</sup><p><font size="7" font face="Comic Sans MS">Жаба</font></p>	Или так</div><br>
+<div class="brd"><sup>13:15  09.05.24</sup><p><font size="7" font face="Verdana">Бобер</font></p>	Хоба</div><br>
+<div class="brd"><sup>13:28  09.05.24</sup><p><font size="7" font face="Times New Roman">Еж</font></p>	БимБамБом</div><br>
+<div class="brd"><sup>10:21  10.05.24</sup><p><font size="7" font face="Times New Roman">Бобер</font></p>	Это тест, меня видно?-)</div><br>
+<div class="brd"><sup>16:09  10.05.24</sup><p><font size="7" font face="Comic Sans MS">Другое</font></p>	Уу</div><br>
+<div class="brd"><sup>17:59  10.05.24</sup><p><font size="7" font face="Verdana">Еж</font></p>	123</div><br>
+<div class="brd"><sup>14:34  12.05.24</sup><p><font size="7" font face="Comic Sans MS">Жаба</font></p>	123</div><br>
+<div class="brd"><sup>14:35  12.05.24</sup><p><font size="7" font face="Comic Sans MS">Жаба</font></p>	123</div><br>
+<div class="brd"><sup>15:22  12.05.24</sup><p><font size="7" font face="Times New Roman">Олень</font></p>	ляля</div><br>
+<div class="brd"><sup>18:17  12.05.24</sup><p><font size="7" font face="Comic Sans MS">Еж</font></p>	пупу</div><br>

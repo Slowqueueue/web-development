@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>База данных</title>
+</head>
+<body BGCOLOR="#CCCCFF" TEXT="#0000FF" LEFTMARGIN="3" LINK="#000000" VLINK="#000000">
+<center>
+<h1>База данных Игра</h1>
+<p>Введите адрес капитана для поиска<p>
+<form name="test" method="post" action="db.php">
+<input type="text" id="poisk" name="poisk" size="40">
+<p><input type="submit" value="Отправить">
+<input type="reset" value="Очистить">
+<a href="http://217.71.139.74/~user220/">
+<input type="button" value="Назад"/>
+</a>
+<a href="http://217.71.139.74/~user220/db.php">
+<input type="button" value="Просмотреть таблицу"/>
+</a>
+</form>
+
+<?php
+$poisk1=$_POST['poisk'];
+$SQL="SELECT captains.id,address,name,team from captains INNER JOIN cap_address ON captains.address_id=cap_address.id";
+if($_POST['poisk']) {$SQL.=" WHERE address='$poisk1'";}
+
+$mysqli = mysqli_connect('localhost', 'user220','gun_fedora_user_220','user220');
+if (!$mysqli) { echo "Can't connect to database!"; exit;}
+@$db=mysqli_select_db($mysqli, "user220");
+if (!$db) { echo "Can't change database!"; exit;}
+$result=mysqli_query($mysqli, $SQL);
+$nf=mysqli_field_count($mysqli);
+echo "<table border=1>";
+$fields=mysqli_fetch_fields($result);
+  foreach ($fields as $value)
+      {
+              echo "<th>".$value->name."<br> ";
+    }
+while ($row=mysqli_fetch_row($result))
+{
+    echo "<tr>";
+    for ($i=0; $i<$nf; $i++)
+    {
+        echo "<td>".$row[$i]."</td>"; //<td>".$row[1]."</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+$nr=mysqli_num_rows($result);
+//$nf=mysqli_num_fields($result);
+echo "<br>";
+echo "Найдено записей: ";
+echo $nr;
+?>
+
+</body>
+</html>
